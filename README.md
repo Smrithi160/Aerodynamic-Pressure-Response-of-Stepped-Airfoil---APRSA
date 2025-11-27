@@ -2,9 +2,7 @@ This repository contains the complete experimental dataset used in the accompany
 
 About the Dataset
 
-The experiments were performed on four airfoil configurations:
-
-Baseline (conventional) airfoil
+The experiments were performed on three airfoil configurations:
 
 Stepped airfoil M1 – 3 discrete steps
 
@@ -12,36 +10,23 @@ Stepped airfoil M2 – 6 discrete steps
 
 Stepped airfoil M3 – 8 discrete steps
 
-Controlled turbulence levels were introduced using upstream passive turbulence-generating grids. Surface pressure measurements were obtained from distributed pressure taps connected to a Scanivalve MPS4264 miniature pressure scanner, ensuring accurate high-frequency pressure acquisition.
+Controlled turbulence levels were introduced using upstream passive turbulence-generating grids. Surface pressure measurements were obtained from distributed pressure taps connected to a Scanivalve MPS4264 miniature pressure scanner, ensuring accurate acquisition of pressure data.
 
 Contents
 
 The repository includes:
 
-Raw time-series surface pressure data collected at multiple pressure ports
+Raw time-series surface pressure data acquired under various inflow turbulence intensities
+collected at multiple pressure ports
 
-Data acquired under various inflow turbulence intensities
+File Name Convention:
+Each file name follows a structured code describing the test condition: 
+•	WG/G – without grid/passive grid for turbulence generation (Flow condition)
+•	1000-Wind tunnel RPM, corresponding to Re=2.14x105.
+•	TI-turbulence intensity
+•	0.44/6.81-turbulence intensity 
+•	PS-Pressure side step
+•	SA-symmetrical airfoil
+•	0/5/10- angles of attack in degrees.
+For example: WG1000TI6.81PSSA0.csv represents Without Grid, 1000 RPM,TI=6.81%, Pressure-side step, Symmetrical airfoil, 0° AoA.
 
-Supporting documentation on the data acquisition procedure and measurement methodology
-
-Computed aerodynamic coefficients:
-
-Time-averaged lift coefficients
-
-Time-averaged drag coefficients
-
-Coefficient of pressure (Cp) distributions
-
-Purpose and Use
-
-This dataset enables:
-
-Identification of local surface-pressure variations
-
-Estimation of aerodynamic loading through pressure integration
-
-Detailed analysis of passive flow-control mechanisms, especially stepped airfoil geometries
-
-Comparative studies across different turbulent inflow environments
-
-Researchers in experimental aerodynamics, flow control, turbulence–airfoil interaction, and data-driven modeling will find this dataset valuable for benchmarking and analysis.

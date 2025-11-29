@@ -79,9 +79,11 @@ FTime – Floating timestamp
 
 Possibly additional system parameters and these columns are not pressure data. They are housekeeping parameters recorded by the scanner for calibration and synchronization.
 
-B. Columns 13–62: Surface Pressure Measurements (Primary Data)
+B. Columns 13–76: Surface Pressure Measurements (Primary Data)
 
 These columns contain the actual surface pressure time-series data measured using tubing from the stepped airfoil connected to the Scanivalve.
+
+M1 Model Readings (64 pressure ports)
 
 Column 13 → Press01 → Pressure Port 1
 
@@ -89,10 +91,18 @@ Column 14 → Press02
 
 …
 
-Column 62 → Press50 → Pressure Port 50
+Column 76 → Press64 → Pressure Port 64
+Total usable ports = 64
 
-Total usable ports = 50 pressure ports.
+M2 & M3 Model Readings (61 pressure ports)
 
-C. Columns 59–77: Additional Unused Channels
+Column 13 → Press01
+
+…
+
+Column 73 → Press61
+Total usable ports = 61
+
+C. Columns 74-76: Additional Unused Channels (only for M2 & M3 model readings)
 
 These channels represent extra Scanivalve ports beyond the connected pneumatic tubings from the test model. They are typically discarded during analysis.

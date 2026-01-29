@@ -23,11 +23,10 @@ Each file name follows a structured code describing the test condition:
 •	WG/G – without grid/passive grid for turbulence generation (Flow condition)
 •	1000-Wind tunnel RPM, corresponding to Re=2.14x105.
 •	TI-turbulence intensity
-•	0.44/6.81-turbulence intensity 
+•	0.44/6.81/8.58/10.38/12.59-turbulence intensity 
 •	PS-Pressure side step
-•	SA-symmetrical airfoil
-•	0/5/10- angles of attack in degrees.
-For example: WG1000TI6.81PSSA0.csv represents Without Grid, 1000 RPM,TI=6.81%, Pressure-side step, Symmetrical airfoil, 0° AoA.
+•	0/5/10/15/20/25/30/35/40/45/50/55/60- geometric angles of attack in degrees.
+For example: WG1000TI6.81PS0.csv represents Without Grid, 1000 RPM,TI=6.81%, Pressure-side step, 0° AoA.
 
 Description of the Excel File:
 
